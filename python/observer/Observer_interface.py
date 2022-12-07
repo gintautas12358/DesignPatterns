@@ -1,8 +1,7 @@
-class ObserverInterface:
+from abc import ABC, abstractmethod
 
-    def __init__(self) -> None:
-        self.current_news = None
+class ObserverInterface(ABC):
 
+    @abstractmethod
     def update(self, news):
-        self.current_news = news
-    
+        pass

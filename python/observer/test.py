@@ -2,16 +2,18 @@ from Netflix_Newsletter_server import NetflixNewsletterServer
 from User_client import UserClient
 
 netflix_server = NetflixNewsletterServer()
+
+users = []
+for i in range(5):
+
+    user = UserClient(f"user {i}" , netflix_server)
+    users.append(user)
+
+
+print(netflix_server.observer_list)
+
 netflix_server.add_news("stock", 54)
 netflix_server.add_news("sci-fi", "Star wars 4")
 
-user0 = UserClient(netflix_server)
-user1 = UserClient(netflix_server)
-
-netflix_server.addObserver(user0)
-netflix_server.addObserver(user1)
-
-user0.read_news()
-user1.read_news()
 
 
