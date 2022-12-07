@@ -13,7 +13,7 @@ class NetflixNewsletterServer(SubjectInterface):
         self.id_counter = self.id_counter + 1
 
     def removeObserver(self, id):
-        self.observer_list.popitem(id)
+        self.observer_list.pop(id)
 
     def notify(self, news):
         for ob in self.observer_list.values():

@@ -1,6 +1,7 @@
 from Observer_interface import ObserverInterface
+from Display_interface import DisplayInterface
 
-class UserClient(ObserverInterface):
+class UserClient(ObserverInterface, DisplayInterface):
 
     def __init__(self, name, server) -> None:
         super().__init__()
@@ -11,7 +12,7 @@ class UserClient(ObserverInterface):
 
     def update(self, news):
         self.current_news = news
-        print(f"{self.name}: \n{self.current_news}")
+        self.display()
     
-    def read_news(self):
-        print(self.current_news)
+    def display(self):
+        print(f"{self.name}: \n{self.current_news}")
