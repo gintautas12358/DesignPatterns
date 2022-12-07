@@ -1,8 +1,8 @@
 class ObserverInterface:
 
     def __init__(self) -> None:
-        pass
+        self.current_news = None
 
-    def update(self):
-        pass
+    def update(self, news):
+        self.current_news = news
     

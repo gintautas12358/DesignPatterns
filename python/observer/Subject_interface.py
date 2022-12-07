@@ -11,8 +11,8 @@ class SubjectInterface:
     def removeObserver(self, id):
         self.observer_list.popitem(id)
 
-    def notify(self):
+    def notify(self, news):
         for ob in self.observer_list.items():
-            ob.update()
+            ob.update(news)
 
     
