@@ -1,9 +1,10 @@
-from Subject_interface import SubjectInterface
+from Observer_interface import ObserverInterface
 
-class UserClient(SubjectInterface):
+class UserClient(ObserverInterface):
 
     def __init__(self, server) -> None:
+        super().__init__()
         self.netflix_newsletter_server = server
 
     def read_news(self):
-        print(self.last_news)
+        print(self.current_news)
