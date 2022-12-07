@@ -1,7 +1,7 @@
 ## Design patterns
 
 - Strategy
-- Observer 
+- Observer done
 - Decorator
 - Factory
 - Singleton
