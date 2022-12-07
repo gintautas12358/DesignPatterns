@@ -5,6 +5,6 @@ class NetflixNewsletterServer(SubjectInterface):
     def __init__(self) -> None:
         self.news = {}
 
-    def publish_news(self):
-        pass
+    def add_news(self, type, message):
+        self.news[type] = message
 
