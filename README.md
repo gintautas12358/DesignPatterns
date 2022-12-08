@@ -1,6 +1,6 @@
 ## Design patterns
 
-- Strategy
+- Strategy done
 - Observer done
 - Decorator
 - Factory

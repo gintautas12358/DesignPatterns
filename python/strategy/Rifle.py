@@ -8,12 +8,15 @@ class Rifle(GunInterface):
         self.bullet_count = 0
 
     def load(self):
-        self.bullet = self.magazine_size
+        self.bullet_count = self.magazine_size
+        print(".... magazine loaded.")
 
-    def shoot(self):
+    def shoot(self, target):
         if self.bullet_count:
             self.bullet_count = self.bullet_count - 1
             print("BAM!")
+            target.got_shoted()
         else:
             print("Out of bullets")
+            self.load()
             

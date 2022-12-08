@@ -7,7 +7,7 @@ class GunInterface(ABC):
         pass
 
     @abstractmethod
-    def shoot(self):
+    def shoot(self, target):
         pass
 
 
