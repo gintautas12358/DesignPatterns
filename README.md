@@ -4,7 +4,7 @@
 - Observer done
 - Decorator
 - Factory
-- Singleton
+- Singleton done
 - Command
 - Adapter
 - Facade
