@@ -2,7 +2,7 @@
 
 - Strategy done
 - Observer done
-- Decorator
+- Decorator done
 - Factory
 - Singleton done
 - Command
