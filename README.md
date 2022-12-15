@@ -3,7 +3,8 @@
 - Strategy done
 - Observer done
 - Decorator done
-- Factory
+- Factory done
+- Abstract factory done
 - Singleton done
 - Command
 - Adapter
