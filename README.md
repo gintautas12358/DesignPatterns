@@ -7,7 +7,7 @@
 - Abstract factory done
 - Singleton done
 - Command done
-- Adapter
+- Adapter done
 - Facade
 - Template method
 - Iterator
