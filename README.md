@@ -6,7 +6,7 @@
 - Factory done
 - Abstract factory done
 - Singleton done
-- Command
+- Command 
 - Adapter
 - Facade
 - Template method
